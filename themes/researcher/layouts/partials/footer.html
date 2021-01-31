@@ -1,0 +1,8 @@
+<div id="footer" class="mb-5">
+    {{ with .Site.Params.footer }}
+        <hr>
+        <div class="container text-center">
+			&copy; <small>{{ .text }}, <a href="{{ .url | absURL }}">{{.url}}</a> - theme: <a href="{{ .made_using_link | absURL }}">{{.made_using}}</a></small>
+        </div>
+    {{ end }}
+</div>
